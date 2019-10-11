@@ -18,19 +18,20 @@ source ./script.sh
 
 #### set review
 ```
-name: set_review_for_latest_revision 590443 2
-args: change_id -1/1/2/-2/0
+name: set_review_for_latest_revision
+param: change_id
+param: label
 ```
 #### Get current revision
 ```
 name: __get_revision_id
-args: change_id
+param: change_id
 ```
 
 #### Submit the change
 ```
 name: submit_change
-args: change_id
+param: change_id
 ```
 
 ### Example method invocation
